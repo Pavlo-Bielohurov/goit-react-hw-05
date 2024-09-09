@@ -1,0 +1,22 @@
+.form {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.input {
+  margin-right: 20px;
+  outline: none;
+  padding: 10px 20px 10px 20px;
+}
+
+.button {
+  background-color: rgb(15, 15, 15);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5%;
+}
+
+.button:hover {
+  color: orangered;
+}

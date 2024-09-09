@@ -1,23 +1,31 @@
+import css from "./movieInfo.module.css";
 export default function MovieInfo({ movie }) {
   return (
-    <div>
+    <div className={css.container}>
       <img
         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
         alt={movie.title}
+        className={css.img}
       />
-      <div>
-        <h1>{movie.title}</h1>
-        <p>{`Release Date: ${movie.release_date}`}</p>
-        <p>{`Country: ${movie.production_countries
+      <div className={css.containerDescription}>
+        <h1 className={css.title}>{movie.title}</h1>
+        <p
+          className={css.description}
+        >{`Release Date: ${movie.release_date}`}</p>
+        <p className={css.description}>{`Country: ${movie.production_countries
           .map((countre) => countre.name)
           .join(" , ")}`}</p>
-        <p>{`Budget: ${movie.budget} USD`}</p>
-        <p>{`Runtime: ${movie.runtime} min`}</p>
-        <p>{`Rating: ${movie.vote_average}/10`}</p>
-        <h2>Overview</h2>
-        <p>{movie.overview}</p>
-        <h3>Genres</h3>
-        <p>{movie.genres.map((gener) => gener.name).join(" , ")}</p>
+        <p className={css.description}>{`Budget: ${movie.budget} USD`}</p>
+        <p className={css.description}>{`Runtime: ${movie.runtime} min`}</p>
+        <p className={css.description}>{`Rating: ${movie.vote_average.toFixed(
+          1
+        )}/10`}</p>
+        <h2 className={css.title}>Overview</h2>
+        <p className={css.description}>{movie.overview}</p>
+        <h3 className={css.title}>Genres</h3>
+        <p className={css.description}>
+          {movie.genres.map((gener) => gener.name).join(" , ")}
+        </p>
       </div>
     </div>
   );

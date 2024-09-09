@@ -1,0 +1,33 @@
+.link {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: orangered;
+}
+
+.isActive {
+  color: orangered;
+}
+
+.list {
+  list-style: none;
+  border-bottom: 3px solid rgb(170, 170, 170);
+  padding-bottom: 20px;
+}
+
+.goBackBtn {
+  margin-left: 40px;
+  padding: 3px 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5%;
+  text-decoration: none;
+}

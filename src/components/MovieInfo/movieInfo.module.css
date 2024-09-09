@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  border-bottom: 3px solid rgb(170, 170, 170);
+  padding: 20px;
+}
+
+.img {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.containerDescription {
+  max-width: 700px;
+}
+
+.titleM {
+  font-size: 32px;
+  margin: 0;
+}
+.overview {
+  font-weight: 300;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+}

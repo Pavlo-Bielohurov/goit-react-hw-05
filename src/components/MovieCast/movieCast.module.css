@@ -1,0 +1,28 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-right: 40px;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.listItem {
+  border: 2px solid rgb(170, 170, 170);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: calc((100% - 10 * 16px) / 10);
+}
+
+.actorImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
